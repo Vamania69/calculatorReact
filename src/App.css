@@ -1,38 +1,90 @@
+
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  justify-content: center;
+
+}
+
+input {
+  /* margin: 1rem ; */
+  width: 286px;
+  height: 90px;
+  background-color: #242530;
   color: white;
+  border: none;
+  text-align: right;
+  font-size: 30px;
+  padding-bottom: 10px;
+  /* margin-bottom: 0%; */
+  border-radius: 10px;
+  margin-bottom: -17px;
 }
 
-.App-link {
-  color: #61dafb;
+input:active {
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  /* width: fit-content; */
+  /* align-content: center; */
+  /* height: 1200px; */
+  width: 290px;
+  margin: 100px auto;
+}
+
+.keypad {
+
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4px;
+
+  padding: 10px;
+  margin: 0;
+
+  background-color: #242530;
+}
+
+button {
+
+  width: 70px;
+  height: 70px;
+  color: white;
+  background: #2C2D3C;
+  border: none;
+  margin: 1px;
+  border-radius: 50%;
+  font-size: large;
+}
+
+.keypad:nth-child(3) {
+  column-span: 3/5;
+}
+
+.keypad:last-child {}
+
+.calculate {
+
+  background-color: #F0B410;
+}
+
+.clear {
+  color: #C16121;
+}
+
+.operations {
+  color: #F0B410;
 }
